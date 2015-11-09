@@ -19,5 +19,3 @@ ADD openam-proxy.conf /etc/httpd/conf.d/openam-proxy.conf
 
 # run tomcat
 CMD /etc/init.d/tomcat6 start && wait && /etc/init.d/httpd start && wait && tail -f /var/log/tomcat6/catalina.out
-
-#
